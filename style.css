@@ -6,12 +6,32 @@
     text-align: center;
 }
 body{
+    min-width: 720px;
+    max-height: 1080px;
     background-color: #B5BEC6;
 
 }
+h2{
+    background-color: #ab00d65d;
+    width: auto;
+    border-radius: 15px;
+
+}
+.same-line{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+#h1{
+    margin-top: auto;
+    width: 250px;
+    align-content: center;
+    border-radius: 5px;
+}
 h1{
-    background-color: #071108;
-    color: #C7DBE6;
+    background-color: #0506052a;
+    border-radius: 20px;
+    color: #000000;
     height: 10vmin;
     font-size: 3rem;
     height: 5rem;
@@ -24,42 +44,51 @@ h1{
     align-content: center;
 
 }
-.outer{
+.outer-user{
     height: 30vmin;
     margin-top: 10px;
-    display: flex;
-    justify-content: center;}
-.choice{
+    flex-direction: column;
+    justify-content: left;
+}
+.outer-comp{
+    height: 30vmin;
+    margin-top: 10px;
+    
+    justify-content: right;
+}
+.choice,.choice-us{
     border: 3px solid transparent;
     background-color: white;
     height: 20vmin;
     width: 20vmin;
-    margin-top: 10px;
+    margin: 100px 0;
     align-self: center;
     margin: 15px;
-    border-radius: 50%;}
+    border-radius: 50%;
+}
 .choice:hover{
     cursor: pointer;
-    height: 25vmin;
-    width: 25vmin;
-    transition: .25s;
+    height: 22vmin;
+    width: 22vmin;
+    transition: .50s;
 
 }
-#rock{
+
+#rock,#rock1{
     background-image: url(./images/rock.png);
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
     
 }
-#paper{
+#paper,#paper1{
     background-image: url(./images/paper.png);
     background-size:cover;
     background-repeat:no-repeat;
     background-position: center;
 
 }
-#scissor{
+#scissor,#scissor1{
     background-image: url(./images/scissors.png);
     background-size :cover;
     background-repeat:no-repeat;
@@ -69,7 +98,7 @@ h1{
     height: 15vmin;
     display:flex;
     justify-content: center;
-    margin: 5px;
+    margin-top: 9%;
 
 }
 .you{
@@ -92,15 +121,17 @@ h1{
     color: #C7DBE6;
     /* height: 10vmin; */
     display: inline;
-    line-height: 10vmin;
+    line-height: 5vmin;
     align-self: center;
     text-align: center;
+    margin-top: 9%;
     padding: 0 15px 0 15px;
     border-radius: 30px;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    cursor: default;
 ;
 }
-@media (max-width:500px){
+@media (max-width:720px){
     nav h1{
         font-size: 1.75rem;
     }

@@ -1,28 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissor</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
     <nav class="navbar">
         <h1>Rock Paper Scissor</h1>
     </nav>
+</head>
+<body>
+    
     <div class="main">
-        <div class="outer">
-            <div class="choice" id="rock"></div>
-            <div class="choice" id="paper"></div>
-            <div class="choice" id="scissor"></div>
+        <div class="same-line">
+            <div class="outer-user">
+            <h2>YOU</h2><br>
+            <div class="choice" id="rock"></div><br>
+            <div class="choice" id="paper"></div><br>
+            <div class="choice" id="scissor"></div><br>
+            </div>
+            <h1 id="h1">Versus</h1>
+            <div class="outer-comp">
+                <h2>SYSTEM</h2><br>
+                <div class="choice-us" id="rock"></div><br>
+                <div class="choice-us" id="paper"></div><br>
+                <div class="choice-us" id="scissor"></div><br>
+            </div>
         </div>
+        <br><br>
+        <div class="msgBox">Pick your move </div>
         <div class="scorediv">
-            <div class="you"><label for="" class="user-score ">0</label>
+            <div class="you"><label for="user-score" class="user-score ">0</label>
             <p>You</p></div>
-            <div class="comp"><label for="" class="comp-score">0</label>
+            <div class="comp"><label for="comp-score" class="comp-score">0</label>
                 <p>Comp</p></div>
         </div>
-        <div class="msgBox">Pick your move </div>
+        
     </div>
     <script src="app.js"></script>
 </body>

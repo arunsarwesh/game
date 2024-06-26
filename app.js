@@ -25,7 +25,8 @@ const showWinner=(userWin ,userChoice,compChoice)=>{
     msg.style.backgroundColor="Red";
     compScore++;
     compScorePara.innerText=compScore;
-   } 
+   }
+   
 }
 //game condition 
 const playGame=(userChoice)=>{
@@ -47,6 +48,7 @@ const playGame=(userChoice)=>{
         }
         showWinner(userWin,userChoice,compChoice);
     }
+    
 }
 // getting user choice
 const choices=document.querySelectorAll(".choice");
@@ -57,10 +59,8 @@ choices.forEach((choice)=>{
         playGame(userChoice);
     });
 });
-
-//random choice from computer
 const genCompChoice= ()=>{
-    const options=["rock","paper","scissor"]
+    const options=["rock","paper","scissor"];
     const randomIdx=Math.floor(Math.random()*3);
     return options[randomIdx];
     
